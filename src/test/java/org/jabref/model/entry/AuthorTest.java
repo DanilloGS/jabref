@@ -102,6 +102,7 @@ class AuthorTest {
     @Test
     void addDotIfAbbreviationDoNotAddDot_WhenHaveSpecialChars() {
       assertEquals("Moore, O, Jr", Author.addDotIfAbbreviation("Moore, O, Jr"));
+      assertEquals("Moore O. ~ Jr", Author.addDotIfAbbreviation("Moore O~ Jr"));
       assertEquals("{\\'{E}}douard", Author.addDotIfAbbreviation("{\\'{E}}douard"));
       assertEquals("J{\\\"o}rg", Author.addDotIfAbbreviation("J{\\\"o}rg"));
     }
