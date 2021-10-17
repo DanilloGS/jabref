@@ -32,7 +32,7 @@ class AuthorTest {
     void getLastOnly () {
         assertEquals("Silva", author1.getLastOnly());
         assertEquals("de Souza", author2.getLastOnly());
-        assertEquals("", author3.hashCode());
+        assertEquals("", author3.getLastOnly());
     }
 
     @Test
